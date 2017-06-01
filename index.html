@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Object List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+  </head>
+  <body>
+    <h1>Sushi List</h1>
+    <h3>Please add your favorite sushi below!</h3>
+    
+    <!--first section that shows a table of sushi-->
+    <div id="table">
+      <table>
+        <thead>
+          <th>Sushi Name</th>
+          <th>Your favorite restaurant to order this from</th>
+        </thead>
+        <tbody id="sushi-body">
+        </tbody>
+      </table>
+      <button id="newItemButton" type="button">Add New Item</button>
+      <button id="clearTable" type="button">Clear Table</button>
+    </div>
+    
+    <!--second section for form to add more sushi-->
+    <div id="form">
+      <form>
+        <h3>Add a New Sushi Entry!</h3>
+        <label>Sushi Name: 
+          <input id="sushiEntry" type="text">
+        </label><br>
+        <label>Your favorite restaurant to order this from:  
+          <input id="restEntry" type="text">
+        </label><br>
+        <button id="submit" type="button">Submit</button>
+        <button id="cancel" type="button">Cancel</button>
+      </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
